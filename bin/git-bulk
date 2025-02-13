@@ -14,6 +14,7 @@ quiet=false
 # print usage message
 #
 usage() {
+  echo 1>&2 "version: pierreay/git-extras:dev"
   echo 1>&2 "usage: git bulk [-q|--quiet] [-g] ([-a]|[-w <ws-name>]) <git command>"
   echo 1>&2 "       git bulk --addworkspace <ws-name> <ws-root-directory> (--from <URL or file>)"
   echo 1>&2 "       git bulk --removeworkspace <ws-name>"
