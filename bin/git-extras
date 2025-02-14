@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 VERSION="7.4.0-dev"
-INSTALL_SCRIPT="https://raw.githubusercontent.com/tj/git-extras/main/install.sh"
+INSTALL_SCRIPT="https://raw.githubusercontent.com/pierreay/git-extras/dev/install.sh"
 
 update() {
   local bin="$(command -v git-extras)"
@@ -22,11 +22,9 @@ updateForWindows() {
   cd /tmp \
     && rm -rf ./git-extras \
     && echo "Setting up 'git-extras'...." \
-    && git clone https://github.com/tj/git-extras.git &> /dev/null \
+    && git clone https://github.com/pierreay/git-extras.git &> /dev/null \
     && cd git-extras \
-	&& git checkout \
-        $(git describe --tags $(git rev-list --tags --max-count=1)) \
-        &> /dev/null \
+	&& git checkout dev &> /dev/null \
 	&& ./install.cmd "$prefix" \
 	&& cd "$orig" \
 	&& echo "... updated git-extras $VERSION -> $(git extras --version)"
