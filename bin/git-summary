@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
 # TODO: Add a flag to print full path instead of repository dirname
-# TODO: Add stash count alongside uncommitted.
 
 cd "$(git root)" || { echo "Can't cd to top level directory";exit 1; }
 
