@@ -136,6 +136,7 @@ _git-bulk() {
         '-w[Run the git command on the specified workspace.]:workspace-name:__gitex_workspace_names' \
         '-q[Suppress bulk output about current execution (quiet mode).]' \
         '--no-follow-symlinks[Do not traverse symbolic links when searching for git repositories.]' \
+        '--no-follow-hidden[Do not traverse hidden directories when searching for git repositories.]' \
         '--addworkspace[Register a workspace for bulk operations.]' \
         '--removeworkspace[Remove the specified workspace.]:workspace-name:__gitex_workspace_names' \
         '--addcurrent[Adds the current directory as workspace to git bulk operations]' \
