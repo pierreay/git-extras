@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
 # FIX: Fix behavior of using $HOME as workspace when asking for a workspace that does not exist. (Already existing in original bulk).
-# TODO: Add option to quiet find errors.
 
 inverse=$(tput rev)
 reset=$(tput sgr0)
