@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-# TODO: Add a flag to print full path instead of repository dirname
-
 cd "$(git root)" || { echo "Can't cd to top level directory";exit 1; }
 
 PROJECT_FULL_PATH=
