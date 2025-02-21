@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# TODO: Add feature to run in a temporary workspace using current directory without prior registration.
+# TODO: Add feature to pass maxdepth flag to find.
+
 inverse=$(tput rev)
 reset=$(tput sgr0)
 txtbld=$(tput bold)
