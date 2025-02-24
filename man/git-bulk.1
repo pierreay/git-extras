@@ -72,9 +72,13 @@ git bulk \-\-listall
 List all registered repositories\.
 .SH "EXAMPLES"
 .nf
-Register a workspace so that git bulk knows about it:
+Register a workspace so that git bulk knows about it using an absolute path:
 
 $ git bulk \-\-addworkspace personal ~/workspaces/personal
+
+Or register a workspace using an environment variable pointing to an absolute path:
+
+$ git bulk \-\-addworkspace personal '$PERSONAL_WORKSPACE'
 
 Use option \-\-from in order to directly clone a repository or multiple repositories
 
@@ -116,6 +120,10 @@ Remove all registered workspaces:
 
 $ git bulk \-\-purge
 .fi
+.SH "FILES"
+.IP "\[ci]" 4
+\fB\.gitconfig\fR: Store the \fBgit\-bulk\fR registered workspaces under the \fBbulkworkspaces\fR key\.
+.IP "" 0
 .SH "AUTHOR"
 Written by Niklas Schlimm <\fIns103@hotmail\.de\fR>
 .SH "REPORTING BUGS"
