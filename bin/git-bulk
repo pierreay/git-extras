@@ -2,6 +2,9 @@
 
 # TODO: Add feature to run in a temporary workspace using current directory without prior registration.
 # TODO: Add feature to pass maxdepth flag to find.
+# TODO: Add feature to pass arbitrary find flags (e.g., to match against patterns using `-path`)
+# TODO: Add feature to add parallel mode to already existing sequential and guarded modes
+# TODO: Add feature to use .gitconfig/bulkconfig as default configuration storage.
 
 inverse=$(tput rev)
 reset=$(tput sgr0)
