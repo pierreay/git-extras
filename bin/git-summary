@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# TODO: Add new column showing unpushed commits:
+# https://stackoverflow.com/questions/2016901/how-to-list-unpushed-git-commits-local-but-not-on-origin
+
 cd "$(git root)" || { echo "Can't cd to top level directory";exit 1; }
 
 PROJECT_FULL_PATH=
